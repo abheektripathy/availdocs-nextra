@@ -1,0 +1,47 @@
+The Avail team provides official Docker images designed to run nodes on the **Kate testnet**. While these guidelines focus on setting up a Full Node, they can easily be modified to accommodate the requirements for running a validator node.
+
+## Before You Start
+
+The following instructions are tailored for Linux distribution with `apt` 
+support, such as Debian.Note that the available Docker images are compatible 
+only with **Linux/amd64 or x86_64 based** CPUs. Running nodes on a cloud server 
+is also common. Recommended hardware specifications for your environment are 
+provided below:
+
+| Minimum                            | Recommended                         |
+|------------------------------------|-------------------------------------|
+| 4GB RAM                            | 8GB RAM                             |
+| 2 core CPU amd64/x86 architecture  | 4 core CPU  amd64/x86 architecture  |
+| 20-40 GB SSD                       | 200-300 GB SSD                      |
+
+**Port 30333** is typically required for peer exchange. Ensure this port, 
+along with any others needed for machine access, is open when setting up your firewall 
+or cloud provider's security groups.
+
+> Useful Links:
+
+- [DockerHub Repository](https://hub.docker.com/r/availj/avail/tags)
+- [Github Releases](https://github.com/availproject/avail/releases)
+
+#### Alternate Networks & Releases Information
+
+The instructions provided are specifically for the **Kate testnet**.
+To connect to a different network, you may need to download an alternate node version
+from the [node releases
+page](https://github.com/availproject/avail/releases) and acquire the corresponding
+chain specification file. For any queries, feel free to reach out to the Avail team.
+
+## Initial Setup
+
+At this point, you should have shell access with root privileges to a linux machine.
+
+### Install Docker
+
+If you do not have Docker installed, please follow the installation instructions [here](https://docs.docker.com/engine/install/).
+
+In this guide, we will use the Ubuntu-specific installation instructions. It's advisable to consult the official guidelines for the most up-to-date information.
+
+```bash
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg lsb-release
+sudo mkdir -p /etc/apt/keyri
