@@ -1,23 +1,16 @@
-# Nextra Docs Template 
+# Avail Docs
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+## Adding new docs
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+Add mdx/md files inside the pages folder to add docs, to have nested docs, create a folder and a md file at the same directory level(which would act like it's index page), and add more mdx files inside.
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+To have more customisations to the sidebar, you can simply edit the `_meta.json` file.
 
-## Quick Start
+## Component/Theme Customisations
 
-Click the button to clone this repository and deploy it on Vercel:
+we can use tailwind to style and create components, and have custom designs for the navbar, index page, plus footer and more, by leveraging nextra's custom theme logic like mentioned [here](https://nextra.site/docs/custom-theme#configure-nextra-to-use-the-theme).
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+## Having State/Interactive Docs
 
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-meh
+Since we're using mdx we can have interactive docs, by rendering react components directly inside the mdx files. <br/>
+For Example- Checkout [This](https://availdocs-nextra.vercel.app/explorer#component)
