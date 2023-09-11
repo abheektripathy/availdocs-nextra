@@ -1,10 +1,13 @@
 {
   "index": "Avail Intro",
-  "explorer": "Explorer",
+  "node": "Node",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
     "href": "https://www.availproject.org/",
     "newWindow": true
-  }
+  },
+
+  "about": "about",
+  "explorer": "Explorer"
 }
